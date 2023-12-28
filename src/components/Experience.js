@@ -11,7 +11,7 @@ const Experience = () => {
   return (
     <div className="Experience" id='experience'>
         <div className="sectionIntro">
-                <hr/><h1>Where I have worked</h1><hr/> 
+            <span id='num'>02. </span><span id='h1'> Where I've worked</span>
           </div>
 
           <div className="ExperienceContent">

@@ -11,7 +11,10 @@ const Intro = () => {
         <h2>Full - Stack Developer </h2>
         <h4>I specialize in implementing ideas that run on the web, and providing solutions to web related problems</h4>
      
-        <button>Checkout my project</button>
+        <a href='#projects'><button>Checkout my work</button></a>
+      </div>
+      <div className="IntroSide">
+          <div></div>
       </div>
         
     </div>

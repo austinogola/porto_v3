@@ -11,20 +11,40 @@ const About = () => {
   return (
     <div className="About" id='about'>
             <div className="sectionIntro">
-                <hr/><h1>About Me</h1><hr/> 
+            <span id='num'>01. </span><span id='h1'> About Me</span>
             </div>
 
             <div className='AboutContent'>
                 <div>
                     <p>
-                        Since beginning my journey as a freelance designer over 11 years ago, I've done remote work 
-                        for agencies, consulted for startups, and collaborated with talented people to create digital 
-                        products for both business and consumer use. I'm quietly confident, naturally curious, and 
-                        perpetually working on improving my chops one design problem at a time.
+                        Hi, my name is Austin, and I enjoy building things that live on the web. My 
+                        expertise involves designing and developing all aspects of a web application; 
+                        designing and developing backend functionality, developing custom frontend web 
+                        UI/UX and developing supporting infrastacture.
                     </p>
+                    <p>
+                        Since beginning my journey as a web developer, I’ve had the privilege of working 
+                        remotely for a startup, consulting for an agency,and collaborating with several 
+                        other talented people to create digital products for both business and consumer use. 
+                    </p>
+                    <p>
+                        I am naturally curious, and perpetually working on improving my chops one web application at a time.
+                    </p>
+
+                    <p>
+                        Technologies I mainly work with day to day:
+                    </p>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Chrome extensions</li>
+                    </ul>
             
                 </div>
-                <div>
+                {/* <div>
                     <ul>
                         <li>JavaScript</li>
                         <li>Python</li>
@@ -34,7 +54,7 @@ const About = () => {
                         <li>Flask</li>
                         <li>Chrome Extensions</li>
                     </ul>
-                </div>
+                </div> */}
             </div>
 
             

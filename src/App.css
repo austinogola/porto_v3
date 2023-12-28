@@ -48,15 +48,16 @@
 
 .navItem:hover {
   color: #ff8c00; /* Change the color on hover, e.g., orange */
+  text-shadow:0 0 10px rgba(255, 140, 0, 0.5);
 }
 
 main{
-  padding-left: 150px;
-  padding-right:150px ;
+  padding-left: 200px;
+  padding-right:200px ;
   padding-top: 100px;
 }
 main > *{
-  min-height: 300px;
+  /* min-height: 300px; */
   /* border: 1px #ff8c00 solid; */
 }
 
@@ -64,36 +65,50 @@ main > *{
 .sectionIntro{
   display:flex ;
   justify-content: flex-start;
-  align-items: center;
+  align-items:flex-end;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  /* border: 1px #ff8c00 solid; */
 }
 .sectionIntro hr{
   border: #ff8c00 1px solid;
   width: 50px;
-  position: relative;
-  top: 6px;
+  /* position: relative; */
+  /* top: 6px; */
   
  
 }
-.sectionIntro h1{
-  height: 40px;
+.sectionIntro #h1{
+  padding: 0px;
   width: fit-content;
-  margin: 5px;
-  font-size: 30px;
+  /* margin: 5px; */
+  font-size: 28px;
+  font-weight: 500;
+  border-bottom: 2px #ff8c00 solid;
+  /* padding-bottom: 3px; */
+  /* text-decoration: underline; */
   
+}
+.sectionIntro #num{
+  color: #ff8c00;
+  font-size: 23px;
+  padding: 0px;
+  margin-right: 10px;
+   position: relative;
+  top: 3px;
 }
 
 .Intro{
   /* border: #ff8c00 solid 1px; */
   /* height: 400px; */
   font-family: 'Roboto Mono', monospace;
+  margin-bottom: 150px;
   
 }
 .Intro *{
   margin: 0px;
   padding: 0px;
-  margin-bottom: 10px;
   /* border: #ff8c00 1px solid; */
 }
 .IntroContent{
@@ -101,25 +116,26 @@ main > *{
 }
 .Intro small{
   
-  font-size: 12px;
-  margin-bottom: 30px;
+  font-size: 13px;
+  margin-bottom: 15px;
   color: #ff8c00;
 }
 .Intro h1{
-  font-size: 80px;
-  margin-bottom: 10px;
+  font-size: 60px;
+  margin-bottom: 15px;
  
 }
 .Intro h2{
-  font-size: 46px;
-  margin-bottom: 10px;
+  font-size: 40px;
+  margin-bottom: 15px;
 }
 .Intro h4{
   margin-top: 40px;
   font-size: 15px;
+  margin-bottom: 15px;
 }
 .Intro button{
-  margin-top: 40px;
+  margin-top: 90px;
   font-size: 15px;
   /* height: 80px; */
   margin-bottom: 40px;
@@ -129,15 +145,62 @@ main > *{
   background-color: white;
   font-family: 'Roboto Mono', monospace; 
   font-size: 13px;
+  color: #ff8c00;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  
+}
+.Intro button:hover{
+  box-shadow: 0 0 50px rgba(255, 140, 0, 0.5);
 }
 
 
 .About{
-  height: 400px;
+  /* height: 400px; */
+  margin-top: 150px;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 150px;
+}
+.About p{
+  font-size: 14px;
 }
 .AboutContent{
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 80% 20%;
+}
+.AboutContent ul{
+  display: grid;
+  grid-template-columns: 30% 30%;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 20px;
+  /* border: #ff8c00 1px solid; */
+}
+.AboutContent li{
+  /* border: #ff8c00 1px solid; */
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 13px;
+  /* width: 50%; */
+  /* list-style-type: disc; */
+}
+.AboutContent li:before {
+  content: "\2022";
+  color: #ff8c00;
+  font-weight: bolder;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.Experience{
+  margin-top: 150px;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 150px;
+}
+.ExperienceContent{
+  border-left: grey 1px solid;
+  height: 300px;
 }
 
 .ProjectsContent{
@@ -165,8 +228,8 @@ main > *{
 .bottomLeftDiv,
 .bottomRightDiv {
   position: absolute;
-  width: 50px;
-  height: 70%;
+  width: 75px;
+  height: 55%;
   background-color: white; 
   bottom: 0;
 }
@@ -179,4 +242,19 @@ main > *{
 .bottomRightDiv {
   right: 0;
   border-left: #ff8c00 2px solid;
+}
+
+.Footer{
+  margin-top: 150px;
+  /* height:100px; */
+  /* border: #ff8c00 2px solid; */
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+.FooterContent{
+  font-size: 14px;
+}
+
+.FooterContent span{
+  margin: 0px;
 }
