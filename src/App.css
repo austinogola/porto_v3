@@ -199,13 +199,83 @@ main > *{
   margin-bottom: 150px;
 }
 .ExperienceContent{
-  border-left: grey 1px solid;
+  
   height: 300px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+
+}
+.experienceCompanies{
+  border-left: #FFE8CC 2px solid;
+  height: fit-content;
+}
+.expComp{
+  cursor: pointer;
+  position: relative;
+  right: 2px;
+  /* transition: .2s all ease-out; */
+}
+.expComp.active{
+  border-left: #ff8c00 2px solid;
+}
+.experienceCompanies,.experienceDetails{
+  /* border: #ff8c00 1px solid; */
+  padding: 0px;
+  margin: 0px;
+}
+.experienceCompanies{
+
+}
+.experienceCompanies li{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  height: fit-content;
+  padding: 10px 20px 10px 20px;
+  font-size: 14px;
+
+}
+.experienceDetails{
+  padding-left: 15px;
+  border-left: #FFE8CC 2px solid;
+  border-radius: 2px;
+}
+
+
+
+.roleDetails{
+  display: none;
+  font-size: 13px;
+}
+.roleDetails.active{
+  display: block;
+}
+.roleDetails li{
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.roleDetails .roleTitle{
+  font-size: 16px;
+  font-weight: 500;
+}
+.roleTitle a{
+  text-decoration: none;
+  color: #ff8c00;
+}
+.roleDetails .roleDate{
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+.Projects{
+  font-family: 'Roboto Mono', monospace;
 }
 
 .ProjectsContent{
-  display: grid;
-  grid-template-columns: 50% 50%;
+  
 }
 
 .projectParent{
@@ -223,26 +293,91 @@ main > *{
   width: 100%;
   height: 100%;
   z-index: -10;
+  font-family: 'Roboto Mono', monospace;
 }
 
-.bottomLeftDiv,
-.bottomRightDiv {
-  position: absolute;
+.leftDivWrapper,
+.rightDivWrapper {
+  position: fixed;
   width: 75px;
-  height: 55%;
+  height: 50%;
   background-color: white; 
   bottom: 0;
+  z-index: -10;
+  /* border: #ff8c00 2px solid; */
 }
-
-.bottomLeftDiv {
+.leftDivWrapper{
   left: 0;
-  border-right: #ff8c00 2px solid;
+}
+.leftDivWrapper span{
+  display: block;
+  position: absolute;
+  right: -12px;
+  transition: .3s all ease-in-out;
+  cursor: pointer;
+  z-index: 10;
+  /* color: #ff8c00; */
+}
+.leftDivWrapper span:hover{
+  color: #ff8c00;
+}
+.leftDivWrapper span:nth-child(1){
+  right: -12px;
+  top: 0px;
+
+}
+.leftDivWrapper span:nth-child(2){
+  right: -12px;
+  top: 40px;
+
+}
+.leftDivWrapper span:nth-child(3){
+  right: -12px;
+  top: 85px;
+
+}
+.leftDivWrapper span#vl{
+  border-left: 2px solid #ff8c00;
+  height: 140px;
+  right: -1px;
+  bottom: 0px;
+
 }
 
-.bottomRightDiv {
+
+.rightDivWrapper{
   right: 0;
-  border-left: #ff8c00 2px solid;
 }
+.rightDivWrapper span{
+  display: block;
+  position: absolute;
+  /* left: -12px; */
+  transition: .3s all ease-in-out;
+  cursor: pointer;
+  z-index: 10;
+  /* color: #ff8c00; */
+}
+.rightDivWrapper #emailText{
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+  font-size: 11px;
+  /* top: 10px; */
+  left: 10px;
+  font-weight: 400;
+  padding: 0px;
+  letter-spacing: 1px;
+
+}
+.rightDivWrapper span#vl{
+  border-right: 2px solid #ff8c00;
+  height: 80px;
+  left: -1px;
+  bottom: 0px;
+
+}
+
+
+
 
 .Footer{
   margin-top: 150px;

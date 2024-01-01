@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <div className="Projects" id='projects'>
         <div className="sectionIntro">
-                <hr/><h1>Projects</h1><hr/> 
+            <span id='num'>03. </span><span id='h1'>My Projects</span>
           </div>
 
         <div className="ProjectsContent">

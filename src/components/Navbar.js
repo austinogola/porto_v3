@@ -9,12 +9,11 @@ const Navbar = () => {
     useEffect(() => {
         const handleScroll = () => {
           const currentScrollPos = window.scrollY;
-          console.log(currentScrollPos);
           if(currentScrollPos<=70){
             setIsScrollingUp(true)
           }else{
             setIsScrollingUp(currentScrollPos < prevScrollPos);
-            console.log(currentScrollPos < prevScrollPos);
+         
           }
           setPrevScrollPos(currentScrollPos);
 
