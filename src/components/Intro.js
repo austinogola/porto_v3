@@ -6,10 +6,13 @@ const Intro = () => {
   return (
     <div className="Intro">
       <div className="IntroContent">
-        <small>Hello, my name is</small><h1>Austin Ogola</h1>
-    
-        <h2>Full - Stack Developer </h2>
-        <h4>I specialize in implementing ideas that run on the web, and providing solutions to web related problems</h4>
+      <span id='begin'>
+        Hello, my name is <br/><large>Austin Ogola</large> 
+      </span><br/>
+      <span>
+        As a <bold>full-stack developer</bold>,I implement <bold> applications </bold> 
+        and <bold>infrastacture</bold> that runs on the web.</span>
+      <br/>
      
         <a href='#projects'><button>Checkout my work</button></a>
       </div>

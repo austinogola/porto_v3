@@ -26,7 +26,7 @@ function App() {
         <Footer/>
       </main>
       
-      <Sides/>
+      {/* <Sides/> */}
       
 
 

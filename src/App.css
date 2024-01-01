@@ -2,9 +2,24 @@
   /* border: 0px;
   margin: 0px; */
 }
+/* :root {
+  --primary_bg: white;
+  --primary_txt: black;
+  --glow_text: #ff8c00;
+} */
+:root {
+  --primary_bg: #330033;
+  --primary_txt: #CCCCCC;
+  --glow_txt: #ff8c00;
+}
+body,body *{
+  background-color: var(--primary_bg);
+  /* color:var(--primary_txt); ; */
+  
+}
+
 .navbar {
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow:  0 1px 8px 1px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -16,7 +31,7 @@
   top: 0;
   left: 0px;
   right: 0px;
-  /* border: #ff8c00 1px solid; */
+  /* border: var(--glow_txt) 1px solid; */
   transition: all .4s ease-out;
 /* font-family: 'Roboto Slab', serif; */
 }
@@ -25,7 +40,7 @@
   /* transform: translateY(0px); */
   top: 0px;
   
-  /* background-color: #ff8c00; */
+  /* background-color: var(--glow_txt); */
 } 
 
 .navbar.hidden {
@@ -34,31 +49,34 @@
 } 
 
 .navItem {
-  color: black;
   text-decoration: none;
   cursor: pointer;
   font-size: 12px;
   margin: 15px;
+  color: var(--primary_txt);
   transition: all .3s ease-in-out;
 }
 .navItem #num{
-  color: #ff8c00;
+  color: var(--glow_txt);
   font-weight: 400;
 }
 
 .navItem:hover {
-  color: #ff8c00; /* Change the color on hover, e.g., orange */
-  text-shadow:0 0 10px rgba(255, 140, 0, 0.5);
+  color: var(--glow_txt);
+  /* text-shadow:0 0 10px rgba(255, 140, 0, 0.5); */
 }
 
 main{
-  padding-left: 200px;
-  padding-right:200px ;
+  padding-left: 100px;
+  padding-right:100px ;
   padding-top: 100px;
+  background-color: #330033;
+  color: #777B88;
+  
 }
 main > *{
   /* min-height: 300px; */
-  /* border: 1px #ff8c00 solid; */
+  /* border: 1px var(--glow_txt) solid; */
 }
 
 
@@ -69,10 +87,10 @@ main > *{
   position: relative;
   margin-bottom: 30px;
   margin-top: 30px;
-  /* border: 1px #ff8c00 solid; */
+  /* border: 1px var(--glow_txt) solid; */
 }
 .sectionIntro hr{
-  border: #ff8c00 1px solid;
+  border: var(--glow_txt) 1px solid;
   width: 50px;
   /* position: relative; */
   /* top: 6px; */
@@ -85,13 +103,13 @@ main > *{
   /* margin: 5px; */
   font-size: 28px;
   font-weight: 500;
-  border-bottom: 2px #ff8c00 solid;
+  border-bottom: 2px var(--glow_txt) solid;
   /* padding-bottom: 3px; */
   /* text-decoration: underline; */
   
 }
 .sectionIntro #num{
-  color: #ff8c00;
+  color: var(--glow_txt);
   font-size: 23px;
   padding: 0px;
   margin-right: 10px;
@@ -100,58 +118,58 @@ main > *{
 }
 
 .Intro{
-  /* border: #ff8c00 solid 1px; */
-  /* height: 400px; */
+  /* border: var(--glow_txt) solid 1px; */
   font-family: 'Roboto Mono', monospace;
   margin-bottom: 150px;
+  background-color: var(--primary_bg);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   
 }
 .Intro *{
   margin: 0px;
   padding: 0px;
-  /* border: #ff8c00 1px solid; */
+  /* border: var(--glow_txt) 1px solid; */
 }
-.IntroContent{
-  width: 75%;
+.Intro span{
+  font-size: 14px;
+  color: var(--primary_txt);
+  display: block;
+  /* margin-bottom: 15px; */
 }
-.Intro small{
-  
-  font-size: 13px;
-  margin-bottom: 15px;
-  color: #ff8c00;
+.Intro #begin{
+  margin-bottom: 10px;
 }
-.Intro h1{
-  font-size: 60px;
-  margin-bottom: 15px;
- 
+.Intro large{
+  font-size:40px;
+  font-weight: 600;
+  color: var(--glow_txt);
 }
-.Intro h2{
-  font-size: 40px;
-  margin-bottom: 15px;
+.Intro bold{
+  font-size:14px;
+  font-weight: 600;
+  color: var(--glow_txt);
 }
-.Intro h4{
-  margin-top: 40px;
-  font-size: 15px;
-  margin-bottom: 15px;
-}
+
+
+
 .Intro button{
-  margin-top: 90px;
+  margin-top: 150px;
   font-size: 15px;
   /* height: 80px; */
   margin-bottom: 40px;
   padding: 20px;
-  border: #ff8c00 1px solid;
-  border-radius: 5px;
-  background-color: white;
+  border: var(--glow_txt) 1px solid;
+  background-color: var(--primary_bg);
   font-family: 'Roboto Mono', monospace; 
   font-size: 13px;
-  color: #ff8c00;
+  color: var(--glow_txt);
   cursor: pointer;
   transition: all .3s ease-in-out;
   
 }
 .Intro button:hover{
-  box-shadow: 0 0 50px rgba(255, 140, 0, 0.5);
+  /* box-shadow: 0 0 50px rgba(255, 140, 0, 0.5); */
 }
 
 
@@ -174,10 +192,10 @@ main > *{
   margin: 0px;
   padding: 0px;
   padding-left: 20px;
-  /* border: #ff8c00 1px solid; */
+  /* border: var(--glow_txt) 1px solid; */
 }
 .AboutContent li{
-  /* border: #ff8c00 1px solid; */
+  /* border: var(--glow_txt) 1px solid; */
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -187,7 +205,7 @@ main > *{
 }
 .AboutContent li:before {
   content: "\2022";
-  color: #ff8c00;
+  color: var(--glow_txt);
   font-weight: bolder;
   width: 20px;
   margin-right: 5px;
@@ -216,10 +234,10 @@ main > *{
   /* transition: .2s all ease-out; */
 }
 .expComp.active{
-  border-left: #ff8c00 2px solid;
+  border-left: var(--glow_txt) 2px solid;
 }
 .experienceCompanies,.experienceDetails{
-  /* border: #ff8c00 1px solid; */
+  /* border: var(--glow_txt) 1px solid; */
   padding: 0px;
   margin: 0px;
 }
@@ -262,7 +280,7 @@ main > *{
 }
 .roleTitle a{
   text-decoration: none;
-  color: #ff8c00;
+  color: var(--glow_txt);
 }
 .roleDetails .roleDate{
   font-size: 12px;
@@ -275,11 +293,13 @@ main > *{
 }
 
 .ProjectsContent{
+  display: grid;
+  grid-template-columns: 50% 50%;
   
 }
 
 .projectParent{
-  border: #ff8c00 1px solid;
+  border: var(--glow_txt) 1px solid;
   height: 200px;
   margin: 10px;
 }
@@ -304,7 +324,7 @@ main > *{
   background-color: white; 
   bottom: 0;
   z-index: -10;
-  /* border: #ff8c00 2px solid; */
+  /* border: var(--glow_txt) 2px solid; */
 }
 .leftDivWrapper{
   left: 0;
@@ -316,10 +336,10 @@ main > *{
   transition: .3s all ease-in-out;
   cursor: pointer;
   z-index: 10;
-  /* color: #ff8c00; */
+  /* color: var(--glow_txt); */
 }
 .leftDivWrapper span:hover{
-  color: #ff8c00;
+  color: var(--glow_txt);
 }
 .leftDivWrapper span:nth-child(1){
   right: -12px;
@@ -337,7 +357,7 @@ main > *{
 
 }
 .leftDivWrapper span#vl{
-  border-left: 2px solid #ff8c00;
+  border-left: 2px solid var(--glow_txt);
   height: 140px;
   right: -1px;
   bottom: 0px;
@@ -355,7 +375,7 @@ main > *{
   transition: .3s all ease-in-out;
   cursor: pointer;
   z-index: 10;
-  /* color: #ff8c00; */
+  /* color: var(--glow_txt); */
 }
 .rightDivWrapper #emailText{
   transform-origin: 0 0;
@@ -369,13 +389,36 @@ main > *{
 
 }
 .rightDivWrapper span#vl{
-  border-right: 2px solid #ff8c00;
+  border-right: 2px solid var(--glow_txt);
   height: 80px;
   left: -1px;
   bottom: 0px;
 
 }
 
+.Contacts{
+  margin-top: 150px;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 150px;
+}
+.Contacts span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px 50px 0px;
+}
+.Contacts button{
+  outline: none;
+  background-color: inherit;
+  height: 60px;
+  width: 120px;
+  cursor: pointer;
+  border: var(--glow_txt) solid 1px;
+  border-radius: 3px;
+}
+.ContactContent p{
+  text-align: center;
+}
 
 
 

@@ -25,20 +25,21 @@ const Contacts = () => {
   return (
     <div className="Contacts" id='contacts'>
         <div className="sectionIntro">
-                <hr/><h1>Get in touch</h1><hr/> 
-            </div>
+            <span id='num'>03. </span><span id='h1'>Contact Me</span>
+          </div>
 
         <div className="ContactContent">
           <p>
           Looking to get in touch with me? Feel free to send me a message. Whether you have an inquiry, 
-          an opportunity to discuss or just want to say hi, my inbox is always open. I’ll try my best to 
-          get back to you ASAP!
+          an opportunity to discuss or just want to say hi, my inbox is open.
           </p>
         </div>
 
-        <button>
-          Contact Me
-        </button>
+        <span>
+          <a href='#email'><button>Contact Me</button></a>
+        </span>
+
+        
       
     </div>
   );
