@@ -10,6 +10,7 @@
 :root {
   --primary_bg: #330033;
   --primary_txt: #CCCCCC;
+  --second_txt: #B2B2B2;
   --glow_txt: #ff8c00;
 }
 body,body *{
@@ -85,8 +86,8 @@ main > *{
   justify-content: flex-start;
   align-items:flex-end;
   position: relative;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-top: 50px;
   /* border: 1px var(--glow_txt) solid; */
 }
 .sectionIntro hr{
@@ -99,28 +100,26 @@ main > *{
 }
 .sectionIntro #h1{
   padding: 0px;
+  color: var(--primary_txt);
   width: fit-content;
   /* margin: 5px; */
-  font-size: 28px;
+  font-size: 27px;
   font-weight: 500;
-  border-bottom: 2px var(--glow_txt) solid;
-  /* padding-bottom: 3px; */
-  /* text-decoration: underline; */
+  /* border-bottom: 2px var(--glow_txt) solid; */
+  
   
 }
 .sectionIntro #num{
   color: var(--glow_txt);
-  font-size: 23px;
+  font-size: 24px;
   padding: 0px;
   margin-right: 10px;
-   position: relative;
-  top: 3px;
 }
 
 .Intro{
   /* border: var(--glow_txt) solid 1px; */
   font-family: 'Roboto Mono', monospace;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
   background-color: var(--primary_bg);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -175,12 +174,13 @@ main > *{
 
 .About{
   /* height: 400px; */
-  margin-top: 150px;
+  margin-top: 200px;
   font-family: 'Roboto Mono', monospace;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 .About p{
   font-size: 14px;
+  color: var(--second_txt);
 }
 .AboutContent{
   display: grid;
@@ -195,11 +195,12 @@ main > *{
   /* border: var(--glow_txt) 1px solid; */
 }
 .AboutContent li{
-  /* border: var(--glow_txt) 1px solid; */
   list-style: none;
   margin: 0px;
+  margin-bottom: 5px;
   padding: 0px;
   font-size: 13px;
+  color: var(--primary_txt);
   /* width: 50%; */
   /* list-style-type: disc; */
 }
@@ -212,9 +213,9 @@ main > *{
 }
 
 .Experience{
-  margin-top: 150px;
+  margin-top: 200px;
   font-family: 'Roboto Mono', monospace;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 .ExperienceContent{
   
@@ -290,6 +291,19 @@ main > *{
 
 .Projects{
   font-family: 'Roboto Mono', monospace;
+}
+.Projects ul,.Projects li{
+  list-style: none;
+}
+.ProjectsMenu{
+  /* border: var(--glow_txt) 1px solid; */
+  display: flex;
+  justify-content: center;
+}
+.ProjectsMenuList{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .ProjectsContent{
@@ -397,9 +411,9 @@ main > *{
 }
 
 .Contacts{
-  margin-top: 150px;
+  margin-top: 200px;
   font-family: 'Roboto Mono', monospace;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 .Contacts span{
   display: flex;
@@ -415,6 +429,7 @@ main > *{
   cursor: pointer;
   border: var(--glow_txt) solid 1px;
   border-radius: 3px;
+  color: var(--glow_txt);
 }
 .ContactContent p{
   text-align: center;
@@ -423,7 +438,7 @@ main > *{
 
 
 .Footer{
-  margin-top: 150px;
+  margin-top: 200px;
   /* height:100px; */
   /* border: #ff8c00 2px solid; */
   text-align: center;

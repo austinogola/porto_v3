@@ -30,8 +30,7 @@ const Contacts = () => {
 
         <div className="ContactContent">
           <p>
-          Looking to get in touch with me? Feel free to send me a message. Whether you have an inquiry, 
-          an opportunity to discuss or just want to say hi, my inbox is open.
+          Looking to get in touch with me? My inbox is open.
           </p>
         </div>
 

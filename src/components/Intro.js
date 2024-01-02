@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 const Intro = () => {
 
   return (
-    <div className="Intro">
+    <div className="Intro" id='intro'>
       <div className="IntroContent">
       <span id='begin'>
         Hello, my name is <br/><large>Austin Ogola</large> 

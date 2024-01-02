@@ -29,21 +29,21 @@ const Navbar = () => {
 
   return (
     <nav  className={`navbar ${isScrollingUp ? 'visible' : 'hidden'}`}>
-      <a className='navItem' href="#about">
+      <a className='navItem' href="#intro">
         <span id='num'>01. </span>
-        <span>About</span> 
+        <span>Home</span> 
     </a>
-      <a className='navItem' href="#experience">
+      <a className='navItem' href="#about">
         <span id='num'>02. </span>
-        <span>Experience</span> 
+        <span>About</span> 
       </a>
       <a className='navItem' href="#projects">
         <span id='num'>03. </span>
-        <span>Projects</span> 
+        <span>Portfolio</span> 
       </a>
       <a className='navItem' href="#contacts">
         <span id='num'>04. </span>
-        <span>Contact me</span> 
+        <span>Contact</span> 
       </a>
     </nav>
   );

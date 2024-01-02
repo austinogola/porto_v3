@@ -11,8 +11,20 @@ const Projects = () => {
   return (
     <div className="Projects" id='projects'>
         <div className="sectionIntro">
-            <span id='num'>03. </span><span id='h1'>My Projects</span>
+            <span id='num'>03. </span><span id='h1'>Recent Work</span>
           </div>
+
+        <div className="ProjectsMenu">
+          <ul className="ProjectsMenuList">
+            <li>All</li>
+            <li>React/Next</li>
+            <li>Node.js</li>
+            <li>Python</li>
+
+          </ul>
+        </div>
+
+        
 
         <div className="ProjectsContent">
           <div className='projectParent'>
@@ -32,6 +44,9 @@ const Projects = () => {
           </div>
           <div className='projectParent'>
               Amazon Affiliate  
+          </div>
+          <div className='projectParent'>
+              Graphing JS Library 
           </div>
         </div>
     </div>
